@@ -62,5 +62,43 @@ def speed_check(speed):
         if demerit_point > 12:
             print("License is suspended")
 
+
 # speed_check(200)
+
+def even_odd(limit):
+    for num in range(limit):
+        if num % 2 == 0:
+            print(f"{num} is Even")
+        else:
+            print(f"{num} is Odd")
+
+
+# even_odd(20)
+
+def sum_of_multiples(limit):
+    for num in range(1, limit + 1):
+        if (num % 3 == 0) or (num % 5 == 0):
+            print(num)
+
+
+# sum_of_multiples(20)
+
+def show_stars_in_rows(limit):
+    for num in range(1, limit + 1):
+        print(num * "*")
+
+
+# show_stars_in_rows(5)
+
+def prime_number(limit):
+    for num in range(1, limit + 1):
+        if (num == 2) or (num == 3) or (num == 5):
+            print(num)
+        elif (num % 2 == 0) or (num % 3 == 0) or (num % 5 == 0):
+            continue
+        else:
+            print(num)
+
+
+# prime_number(100)
 
